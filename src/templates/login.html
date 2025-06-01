@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecLivros - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body class="cadastro">
+
+  <div class="container">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="Logo RecLivros" />
+    </div>
+    <h1 style="text-align: left;">Login</h1>
+    <form action="/login" method="POST">
+      <label for="usuario">Nome ou Email</label>
+      <input type="text" id="usuario" name="usuario" required />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required />
+
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="login-link">
+      Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+    </div>
+  </div>
+
+</body>
+</html>

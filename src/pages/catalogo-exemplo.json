@@ -1,0 +1,657 @@
+{
+	"content": [
+		{
+			"id": 283734,
+			"titulo": "A exposicʹao d'arte ornamental",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1882,
+			"descricao": null,
+			"capa": "https://covers.openlibrary.org/b/id/10053534-L.jpg",
+			"paginas": 575,
+			"editora": "Imprensa Nacional",
+			"autores": [
+				{
+					"id": 10128,
+					"nome": "Sousa Viterbo",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 936,
+					"nome": "Exhibitions",
+					"num_livros": null
+				},
+				{
+					"id": 9727,
+					"nome": "Railroads",
+					"num_livros": null
+				},
+				{
+					"id": 39150,
+					"nome": "Decoration and ornament",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 279398,
+			"titulo": "A exposicʹao d'arte ornamental",
+			"subtitulo": "notas ao catalogo",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1883,
+			"descricao": null,
+			"capa": "https://covers.openlibrary.org/b/id/9643444-L.jpg",
+			"paginas": 61,
+			"editora": "Imprensa Nacional",
+			"autores": [
+				{
+					"id": 10128,
+					"nome": "Sousa Viterbo",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 936,
+					"nome": "Exhibitions",
+					"num_livros": null
+				},
+				{
+					"id": 1337,
+					"nome": "Portuguese Art",
+					"num_livros": null
+				},
+				{
+					"id": 39150,
+					"nome": "Decoration and ornament",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 239719,
+			"titulo": "A exposição Cervantina da Bibliotheca Nacional de Lisboa",
+			"subtitulo": "breve noticia pelo director da bibliotheca Xavier da Cunha, seguida do respectivo catalogo por Eduardo de Castro e Almeida, primeiro-conservador.",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1908,
+			"descricao": null,
+			"capa": "https://covers.openlibrary.org/b/id/5820435-L.jpg",
+			"paginas": 132,
+			"editora": "Imprensa Nacional",
+			"autores": [
+				{
+					"id": 1631,
+					"nome": "Biblioteca Nacional de Lisboa.",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 137547,
+					"nome": "Cervantes Saavedra, Miguel de, 1547-1616 -- Bibliography",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 187932,
+			"titulo": "A exposição Petrarchiana da Bibliotheca nacional de Lisboa.",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1905,
+			"descricao": null,
+			"capa": "https://covers.openlibrary.org/b/id/5872852-L.jpg",
+			"paginas": 80,
+			"editora": "Imprensa nacional",
+			"autores": [
+				{
+					"id": 1631,
+					"nome": "Biblioteca Nacional de Lisboa.",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 115212,
+					"nome": "Petrarca, Francesco, 1304-1374 -- Bibliography",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 106977,
+			"titulo": "A exposição como parcela de tempo",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2020,
+			"descricao": null,
+			"capa": null,
+			"paginas": 189,
+			"editora": "Documenta",
+			"autores": [
+				{
+					"id": 69617,
+					"nome": "Hugo Canoilas",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 322,
+					"nome": "Interviews",
+					"num_livros": null
+				},
+				{
+					"id": 645,
+					"nome": "Artists",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 172911,
+			"titulo": "A exposição do centenário e o meio arquitetônico carioca no início dos anos 1920",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2010,
+			"descricao": null,
+			"capa": null,
+			"paginas": 291,
+			"editora": "EBA Publicações",
+			"autores": [
+				{
+					"id": 30007,
+					"nome": "Ruth Levy",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 495,
+					"nome": "Buildings, structures",
+					"num_livros": null
+				},
+				{
+					"id": 598,
+					"nome": "History",
+					"num_livros": null
+				},
+				{
+					"id": 2636,
+					"nome": "Architecture",
+					"num_livros": null
+				},
+				{
+					"id": 6914,
+					"nome": "Buildings",
+					"num_livros": null
+				},
+				{
+					"id": 106671,
+					"nome": "Exposição do Centenario do Brasil (1922-1923 : Rio de Janeiro, Brazil)",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 148090,
+			"titulo": "A expressão amazonense",
+			"subtitulo": "do colonialismo ao neocolonialismo",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1978,
+			"descricao": null,
+			"capa": null,
+			"paginas": 217,
+			"editora": "Editora Alfa-Omega",
+			"autores": [
+				{
+					"id": 698,
+					"nome": "Ma\\u0301rcio Souza",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 47495,
+					"nome": "Amazonas (Brazil) -- Civilization.",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 300637,
+			"titulo": "A expressão corporal das emoções",
+			"subtitulo": "no cancioneiro português da Vaticana",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1933,
+			"descricao": null,
+			"capa": null,
+			"paginas": 117,
+			"editora": "Academia das Ciências de Lisboa",
+			"autores": [
+				{
+					"id": 9714,
+					"nome": "Henrique de Vilhena",
+					"num_livros": null
+				}
+			],
+			"generos": []
+		},
+		{
+			"id": 336240,
+			"titulo": "A expressão da futuridade no português falado",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2002,
+			"descricao": null,
+			"capa": null,
+			"paginas": 168,
+			"editora": "FCL Laboratório Editorial, UNESP/Araraquara",
+			"autores": [
+				{
+					"id": 136027,
+					"nome": "Ademar da Silva",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 1398,
+					"nome": "Portuguese language",
+					"num_livros": null
+				},
+				{
+					"id": 7413,
+					"nome": "Spoken Portuguese",
+					"num_livros": null
+				},
+				{
+					"id": 182516,
+					"nome": "Tense",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 313517,
+			"titulo": "A expressão dramática do homem político em Shakespeare",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1978,
+			"descricao": null,
+			"capa": null,
+			"paginas": 338,
+			"editora": null,
+			"autores": [
+				{
+					"id": 159176,
+					"nome": "Ba\\u0301rbara Heliodora",
+					"num_livros": null
+				}
+			],
+			"generos": []
+		},
+		{
+			"id": 226487,
+			"titulo": "A expressão dramática.",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1956,
+			"descricao": null,
+			"capa": null,
+			"paginas": 198,
+			"editora": "Instituto Nacional do Livro",
+			"autores": [
+				{
+					"id": 28618,
+					"nome": "Ruggero Jacobbi",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 132436,
+					"nome": "Performing arts.",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 261855,
+			"titulo": "A expressão musical dos Estados Unidos.",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1941,
+			"descricao": null,
+			"capa": null,
+			"paginas": 26,
+			"editora": "Leuzinger, s.a.",
+			"autores": [
+				{
+					"id": 1995,
+					"nome": "Ma\\u0301rio de Andrade",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 147165,
+					"nome": "Music -- United States -- History and criticism.",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 134500,
+			"titulo": "A expressão plástica da criança excepcional",
+			"subtitulo": "[exposição] 25 de agosto a 10 de setembro de 1972. São Paulo, Brasil.",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1972,
+			"descricao": null,
+			"capa": null,
+			"paginas": 24,
+			"editora": null,
+			"autores": [
+				{
+					"id": 31635,
+					"nome": "Universidade de Sa\\u0303o Paulo. Museu de Arte Contempora\\u0302nea.",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 88103,
+					"nome": "Art and mental illness -- Exhibitions.",
+					"num_livros": null
+				},
+				{
+					"id": 88196,
+					"nome": "Children with mental disabilities -- Education.",
+					"num_livros": null
+				},
+				{
+					"id": 88300,
+					"nome": "Art -- Study and teaching.",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 161585,
+			"titulo": "A expressão popular do sagrado",
+			"subtitulo": "uma análise psico-antropológica da Igreja Universal do Reino de Deus",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2000,
+			"descricao": null,
+			"capa": null,
+			"paginas": 188,
+			"editora": "Paulinas",
+			"autores": [
+				{
+					"id": 95850,
+					"nome": "Paulo Bonfatti",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 2263,
+					"nome": "Igreja Universal do Reino de Deus",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 246762,
+			"titulo": "A expressão amazonense",
+			"subtitulo": "do colonialismo ao neocolonialismo",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2003,
+			"descricao": null,
+			"capa": "https://covers.openlibrary.org/b/id/5489327-L.jpg",
+			"paginas": 272,
+			"editora": "Valer",
+			"autores": [
+				{
+					"id": 10306,
+					"nome": "M\\u00e1rcio Souza",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 951,
+					"nome": "Amazonas (Brazil) -- History.",
+					"num_livros": null
+				},
+				{
+					"id": 47495,
+					"nome": "Amazonas (Brazil) -- Civilization.",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 124238,
+			"titulo": "A expressão dramática do homem político em Shakespeare",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1978,
+			"descricao": null,
+			"capa": null,
+			"paginas": 338,
+			"editora": "Paz e Terra",
+			"autores": [
+				{
+					"id": 78635,
+					"nome": "B\\u00e1rbara Heliodora",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 1549,
+					"nome": "Criticism and interpretation",
+					"num_livros": null
+				},
+				{
+					"id": 2760,
+					"nome": "Political and social views",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 148943,
+			"titulo": "A expropriação dos alimentos",
+			"subtitulo": "análise das relações entre a produção agrícola familiar e o capital comercial : um estudo de caso na Amazônia",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1985,
+			"descricao": null,
+			"capa": null,
+			"paginas": 187,
+			"editora": "Achiamé",
+			"autores": [
+				{
+					"id": 3287,
+					"nome": "Manoel Jose\\u0301 de Miranda Neto",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 11385,
+					"nome": "Food supply -- Brazil -- Pará (State)",
+					"num_livros": null
+				},
+				{
+					"id": 94390,
+					"nome": "Produce trade -- Government policy -- Brazil -- Pará (State)",
+					"num_livros": null
+				},
+				{
+					"id": 94437,
+					"nome": "Farm produce -- Brazil -- Pará (State)",
+					"num_livros": null
+				},
+				{
+					"id": 94483,
+					"nome": "Produce trade -- Brazil, North.",
+					"num_livros": null
+				},
+				{
+					"id": 94588,
+					"nome": "Food supply -- Brazil, North.",
+					"num_livros": null
+				},
+				{
+					"id": 94760,
+					"nome": "Produce trade -- Brazil -- Pará (State)",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 84626,
+			"titulo": "A expropriação do trabalho e o desafio operário",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2015,
+			"descricao": null,
+			"capa": null,
+			"paginas": 201,
+			"editora": "EDUFAL",
+			"autores": [
+				{
+					"id": 57612,
+					"nome": "Artur Bispo dos Santos",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 438,
+					"nome": "Labor",
+					"num_livros": null
+				},
+				{
+					"id": 3778,
+					"nome": "Socialism",
+					"num_livros": null
+				},
+				{
+					"id": 3832,
+					"nome": "Capitalism",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 287480,
+			"titulo": "A expropriação em razão do plantio de psicotrópicos",
+			"subtitulo": null,
+			"primeira_data_publicacao": null,
+			"data_publicacao": 2010,
+			"descricao": null,
+			"capa": null,
+			"paginas": 269,
+			"editora": "Scortecci Editora",
+			"autores": [
+				{
+					"id": 149660,
+					"nome": "Ad\\u00e3o de Assun\\u00e7\\u00e3o Duarte",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 422,
+					"nome": "Criminal provisions",
+					"num_livros": null
+				},
+				{
+					"id": 1501,
+					"nome": "Law and legislation",
+					"num_livros": null
+				},
+				{
+					"id": 5440,
+					"nome": "Eminent domain",
+					"num_livros": null
+				},
+				{
+					"id": 15355,
+					"nome": "Hallucinogenic drugs",
+					"num_livros": null
+				},
+				{
+					"id": 32889,
+					"nome": "Drugs of abuse",
+					"num_livros": null
+				}
+			]
+		},
+		{
+			"id": 45694,
+			"titulo": "A expulsão da Companhia de Jesus do Brasil em 1760",
+			"subtitulo": "exame crítico-histórico no seu bicentenário.",
+			"primeira_data_publicacao": null,
+			"data_publicacao": 1960,
+			"descricao": null,
+			"capa": null,
+			"paginas": 64,
+			"editora": "Instituto Anchietano de Pesquisas",
+			"autores": [
+				{
+					"id": 34338,
+					"nome": "Luiz Gonzaga Jaeger",
+					"num_livros": null
+				}
+			],
+			"generos": [
+				{
+					"id": 8484,
+					"nome": "Jesuits -- Brazil.",
+					"num_livros": null
+				},
+				{
+					"id": 36509,
+					"nome": "Pombal, Sebastião José de Carvalho e Mello, Marquês de, 1699-1782.",
+					"num_livros": null
+				},
+				{
+					"id": 36556,
+					"nome": "Jesuits -- History.",
+					"num_livros": null
+				}
+			]
+		}
+	],
+	"pageable": {
+		"pageNumber": 702,
+		"pageSize": 20,
+		"sort": {
+			"empty": false,
+			"sorted": true,
+			"unsorted": false
+		},
+		"offset": 14040,
+		"paged": true,
+		"unpaged": false
+	},
+	"last": false,
+	"totalElements": 341714,
+	"totalPages": 17086,
+	"size": 20,
+	"number": 702,
+	"sort": {
+		"empty": false,
+		"sorted": true,
+		"unsorted": false
+	},
+	"first": false,
+	"numberOfElements": 20,
+	"empty": false
+}

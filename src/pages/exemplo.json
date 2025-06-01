@@ -1,0 +1,2067 @@
+[
+    {
+		"id": 84056,
+		"titulo": "Harry Potter e a Pedra Filosofal",
+		"subtitulo": null,
+		"primeira_data_publicacao": null,
+		"data_publicacao": null,
+		"descricao": "[contracapa]\r\nHarry Potter é um garoto comum que vive num armário debaixo da escada da casa de seus tios. Sua vida muda quando ele é resgatado por uma coruja e levado para a Escola de Magia e Bruxaria de Hogwarts. Lá ele descobre tudo sobre a misteriosa morte de seus pais, aprende a jogar quadribol e enfrenta, num duelo, o cruel Voldemort.\r\nCom inteligência e criatividade, J. K. Rowling criou um clássico de nossos tempos. Uma obra que reúne fantasia e suspense num universo original atraente para crianças, adolescentes e adultos.\r\n\r\n[Orelha]\r\nUm bebê é deixado à porta da família Dursley, com uma carta que explica quem ele é e quais os mistérios que envolvem sua sobrevivência, após um duelo no qual seus pais morreram. Onze anos mais tarde, Harry Potter recebe o melhor dos presentes de aniversário: descobre que é um bruxo e como tal deve ser educado. Conduzido por Rúbeo Hagrid, o doce e atrapalhado gigante ruivo, Harry inicia sua trajetória no cotidiano da magia. Na escola de bruxaria de Hogwarts, sob a direção do sábio professor Alvo Dumbledore, ele aprende a fazer poções, feitiços, a transformar coisas, e a \"pilotar\" uma vassoura. Enfrenta as dificuldades normais de um principiante e alguns obstáculos a mais lhe são impingidos por sua fama. Afinal, Harry Potter, mesmo sem saber, derrotou o mais terrível dos feiticeiros. Agora, para prosseguir vitorioso, precisa aprender a dominar a sabedoria contida em valores simples da vida como a amizade, a perseverança e o amor.",
+		"capa": "https://covers.openlibrary.org/b/id/7356020-L.jpg",
+		"paginas": 263,
+		"editora": "Editora Rocco",
+		"autores": [
+			{
+				"id": 22715,
+				"nome": "J. K. Rowling",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 304,
+				"nome": "English fiction",
+				"num_livros": null
+			},
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 499,
+				"nome": "English literature",
+				"num_livros": null
+			},
+			{
+				"id": 713,
+				"nome": "Monsters",
+				"num_livros": null
+			},
+			{
+				"id": 730,
+				"nome": "Mystery",
+				"num_livros": null
+			},
+			{
+				"id": 879,
+				"nome": "Children's fiction",
+				"num_livros": null
+			},
+			{
+				"id": 916,
+				"nome": "Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 976,
+				"nome": "Children's stories",
+				"num_livros": null
+			},
+			{
+				"id": 1538,
+				"nome": "New York Times bestseller",
+				"num_livros": null
+			},
+			{
+				"id": 1794,
+				"nome": "Translations from English",
+				"num_livros": null
+			},
+			{
+				"id": 2434,
+				"nome": "Witches",
+				"num_livros": null
+			},
+			{
+				"id": 2780,
+				"nome": "Vampires",
+				"num_livros": null
+			},
+			{
+				"id": 3124,
+				"nome": "Friendship, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 3146,
+				"nome": "Reading Level-Grade 10",
+				"num_livros": null
+			},
+			{
+				"id": 3147,
+				"nome": "Reading Level-Grade 11",
+				"num_livros": null
+			},
+			{
+				"id": 3149,
+				"nome": "Reading Level-Grade 12",
+				"num_livros": null
+			},
+			{
+				"id": 3303,
+				"nome": "English language",
+				"num_livros": null
+			},
+			{
+				"id": 3423,
+				"nome": "Reading Level-Grade 9",
+				"num_livros": null
+			},
+			{
+				"id": 3485,
+				"nome": "Ficción juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 3733,
+				"nome": "Schools",
+				"num_livros": null
+			},
+			{
+				"id": 3855,
+				"nome": "Friendship",
+				"num_livros": null
+			},
+			{
+				"id": 4015,
+				"nome": "Fiction, fantasy, general",
+				"num_livros": null
+			},
+			{
+				"id": 4417,
+				"nome": "Wizards",
+				"num_livros": null
+			},
+			{
+				"id": 4639,
+				"nome": "Juvenile audience",
+				"num_livros": null
+			},
+			{
+				"id": 4684,
+				"nome": "Magic",
+				"num_livros": null
+			},
+			{
+				"id": 5014,
+				"nome": "Open Library Staff Picks",
+				"num_livros": null
+			},
+			{
+				"id": 6056,
+				"nome": "Juvenile literature",
+				"num_livros": null
+			},
+			{
+				"id": 7049,
+				"nome": "Adventure",
+				"num_livros": null
+			},
+			{
+				"id": 10296,
+				"nome": "German language materials",
+				"num_livros": null
+			},
+			{
+				"id": 10486,
+				"nome": "Fantasy",
+				"num_livros": null
+			},
+			{
+				"id": 11201,
+				"nome": "Romans, nouvelles, etc. pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 11317,
+				"nome": "Adventure and adventurers, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11704,
+				"nome": "England, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 12346,
+				"nome": "Supernatural",
+				"num_livros": null
+			},
+			{
+				"id": 12459,
+				"nome": "Fantasy & Magic",
+				"num_livros": null
+			},
+			{
+				"id": 12489,
+				"nome": "Wizards, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 12608,
+				"nome": "Latin language materials",
+				"num_livros": null
+			},
+			{
+				"id": 12788,
+				"nome": "Witches in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 13090,
+				"nome": "Wizards in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 13145,
+				"nome": "Translations into Chinese",
+				"num_livros": null
+			},
+			{
+				"id": 15073,
+				"nome": "orphans",
+				"num_livros": null
+			},
+			{
+				"id": 15110,
+				"nome": "Junge",
+				"num_livros": null
+			},
+			{
+				"id": 15687,
+				"nome": "England in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 15691,
+				"nome": "Magie",
+				"num_livros": null
+			},
+			{
+				"id": 15883,
+				"nome": "Kinderbuch",
+				"num_livros": null
+			},
+			{
+				"id": 16329,
+				"nome": "fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 16386,
+				"nome": "Teen fiction",
+				"num_livros": null
+			},
+			{
+				"id": 16489,
+				"nome": "Science fiction & fantasy",
+				"num_livros": null
+			},
+			{
+				"id": 17743,
+				"nome": "Novela juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 19180,
+				"nome": "Schools, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 19303,
+				"nome": "Escuelas",
+				"num_livros": null
+			},
+			{
+				"id": 19586,
+				"nome": "Social Themes",
+				"num_livros": null
+			},
+			{
+				"id": 22236,
+				"nome": "Magic, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23104,
+				"nome": "Action & Adventure",
+				"num_livros": null
+			},
+			{
+				"id": 23902,
+				"nome": "Magic in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23905,
+				"nome": "Schools in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23919,
+				"nome": "Magier",
+				"num_livros": null
+			},
+			{
+				"id": 24030,
+				"nome": "Ron Weasley (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24064,
+				"nome": "Sorciers",
+				"num_livros": null
+			},
+			{
+				"id": 24167,
+				"nome": "Fabeltiere",
+				"num_livros": null
+			},
+			{
+				"id": 24196,
+				"nome": "Harry Potter (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24235,
+				"nome": "Hermione Granger (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24498,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary organization)",
+				"num_livros": null
+			},
+			{
+				"id": 24503,
+				"nome": "Juvenile works",
+				"num_livros": null
+			},
+			{
+				"id": 24526,
+				"nome": "Potter, harry (fictitious character), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24588,
+				"nome": "Hogwarts school of witchcraft and wizardry (imaginary organization), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24753,
+				"nome": "Sorcières",
+				"num_livros": null
+			},
+			{
+				"id": 24777,
+				"nome": "Écoles",
+				"num_livros": null
+			},
+			{
+				"id": 24795,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary place)",
+				"num_livros": null
+			},
+			{
+				"id": 26682,
+				"nome": "roman",
+				"num_livros": null
+			},
+			{
+				"id": 32214,
+				"nome": "Alchemy",
+				"num_livros": null
+			},
+			{
+				"id": 39502,
+				"nome": "Literary theory",
+				"num_livros": null
+			},
+			{
+				"id": 40674,
+				"nome": "Chinese fiction",
+				"num_livros": null
+			},
+			{
+				"id": 40676,
+				"nome": "Translations into Marathi",
+				"num_livros": null
+			},
+			{
+				"id": 40774,
+				"nome": "English Fantasy literature",
+				"num_livros": null
+			},
+			{
+				"id": 40859,
+				"nome": "Harry Potter (Fictional character)",
+				"num_livros": null
+			},
+			{
+				"id": 44765,
+				"nome": "Ghosts",
+				"num_livros": null
+			},
+			{
+				"id": 58852,
+				"nome": "NOVELAS INGLESAS",
+				"num_livros": null
+			},
+			{
+				"id": 59941,
+				"nome": "school stories",
+				"num_livros": null
+			},
+			{
+				"id": 59951,
+				"nome": "Children - harry potter",
+				"num_livros": null
+			},
+			{
+				"id": 59993,
+				"nome": "Witchcraft, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 60012,
+				"nome": "Places & cultures",
+				"num_livros": null
+			},
+			{
+				"id": 60024,
+				"nome": "Hechicería",
+				"num_livros": null
+			},
+			{
+				"id": 60026,
+				"nome": "Stein der Weisen",
+				"num_livros": null
+			},
+			{
+				"id": 60055,
+				"nome": "Challenges and Overcoming Obstacles",
+				"num_livros": null
+			},
+			{
+				"id": 60063,
+				"nome": "MAGIA",
+				"num_livros": null
+			},
+			{
+				"id": 60074,
+				"nome": "Fiction - people",
+				"num_livros": null
+			},
+			{
+				"id": 60083,
+				"nome": "MAGOS",
+				"num_livros": null
+			},
+			{
+				"id": 60087,
+				"nome": "Children - fiction & literature",
+				"num_livros": null
+			},
+			{
+				"id": 60133,
+				"nome": "Ungeheuer",
+				"num_livros": null
+			},
+			{
+				"id": 60143,
+				"nome": "NOVELAS FANTÁSTICAS",
+				"num_livros": null
+			},
+			{
+				"id": 60149,
+				"nome": "LITERATURA JUVENIL ESTADOUNIDENSE",
+				"num_livros": null
+			},
+			{
+				"id": 60188,
+				"nome": "NOVELAS JUVENILES INGLESAS",
+				"num_livros": null
+			},
+			{
+				"id": 60189,
+				"nome": "Cleverness",
+				"num_livros": null
+			},
+			{
+				"id": 60195,
+				"nome": "School Life",
+				"num_livros": null
+			},
+			{
+				"id": 60199,
+				"nome": "Internats",
+				"num_livros": null
+			},
+			{
+				"id": 60200,
+				"nome": "Lehrling",
+				"num_livros": null
+			},
+			{
+				"id": 60223,
+				"nome": "Translating into Welsh",
+				"num_livros": null
+			},
+			{
+				"id": 60236,
+				"nome": "Poudlard, école de sorcellerie (Organisation imaginaire)",
+				"num_livros": null
+			},
+			{
+				"id": 60238,
+				"nome": "Magic and Supernatural",
+				"num_livros": null
+			},
+			{
+				"id": 60246,
+				"nome": "Ingleterra",
+				"num_livros": null
+			},
+			{
+				"id": 60260,
+				"nome": "Modern history to 20th century: c 1700 to c 1900",
+				"num_livros": null
+			},
+			{
+				"id": 60273,
+				"nome": "Wizard",
+				"num_livros": null
+			}
+		]
+	},
+	{
+		"id": 233401,
+		"titulo": "Harry Potter e o Enigma do Príncipe",
+		"subtitulo": null,
+		"primeira_data_publicacao": 2005,
+		"data_publicacao": 2005,
+		"descricao": "Estamos em pleno verão, mas há uma estranha névoa que comprime as vidraças. Harry Potter espera, inquieto, em seu quarto na casa dos tios, a visita do professor Dumbledore. numa das últimas vezes em que viu o diretor, ele travava um duelo corpo-a-corpo com Lord Voldemort. Harry não entende muito bem qual será o motivo para Dumbledore aportar assim, de repente, na casa de seus tios. Por que ele não pode esperar pelo retorno a Hogwarts, dali a algumas semanas? O sexto ano de Harry em Howgwarts, começa de maneira peculiar, e o mundo dos truxas e dos bruxos, não há dúvida, parecem se entrelaçar...\r\n\r\n--back cover",
+		"capa": "https://covers.openlibrary.org/b/id/12728913-L.jpg",
+		"paginas": null,
+		"editora": "Rocco",
+		"autores": [
+			{
+				"id": 22715,
+				"nome": "J. K. Rowling",
+				"num_livros": null
+			},
+			{
+				"id": 127547,
+				"nome": "Mary GrandPr\\u00e9",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 769,
+				"nome": "Large type books",
+				"num_livros": null
+			},
+			{
+				"id": 879,
+				"nome": "Children's fiction",
+				"num_livros": null
+			},
+			{
+				"id": 916,
+				"nome": "Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 1139,
+				"nome": "Family",
+				"num_livros": null
+			},
+			{
+				"id": 1454,
+				"nome": "Good and evil",
+				"num_livros": null
+			},
+			{
+				"id": 1538,
+				"nome": "New York Times bestseller",
+				"num_livros": null
+			},
+			{
+				"id": 2434,
+				"nome": "Witches",
+				"num_livros": null
+			},
+			{
+				"id": 3146,
+				"nome": "Reading Level-Grade 10",
+				"num_livros": null
+			},
+			{
+				"id": 3147,
+				"nome": "Reading Level-Grade 11",
+				"num_livros": null
+			},
+			{
+				"id": 3149,
+				"nome": "Reading Level-Grade 12",
+				"num_livros": null
+			},
+			{
+				"id": 3318,
+				"nome": "Coming of age",
+				"num_livros": null
+			},
+			{
+				"id": 3485,
+				"nome": "Ficción juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 3733,
+				"nome": "Schools",
+				"num_livros": null
+			},
+			{
+				"id": 3855,
+				"nome": "Friendship",
+				"num_livros": null
+			},
+			{
+				"id": 4015,
+				"nome": "Fiction, fantasy, general",
+				"num_livros": null
+			},
+			{
+				"id": 4417,
+				"nome": "Wizards",
+				"num_livros": null
+			},
+			{
+				"id": 4684,
+				"nome": "Magic",
+				"num_livros": null
+			},
+			{
+				"id": 6926,
+				"nome": "England",
+				"num_livros": null
+			},
+			{
+				"id": 10486,
+				"nome": "Fantasy",
+				"num_livros": null
+			},
+			{
+				"id": 10677,
+				"nome": "Fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11201,
+				"nome": "Romans, nouvelles, etc. pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 11704,
+				"nome": "England, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 12350,
+				"nome": "Novela fantástica",
+				"num_livros": null
+			},
+			{
+				"id": 12459,
+				"nome": "Fantasy & Magic",
+				"num_livros": null
+			},
+			{
+				"id": 12489,
+				"nome": "Wizards, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 15073,
+				"nome": "orphans",
+				"num_livros": null
+			},
+			{
+				"id": 15900,
+				"nome": "Englisch",
+				"num_livros": null
+			},
+			{
+				"id": 19027,
+				"nome": "School stories",
+				"num_livros": null
+			},
+			{
+				"id": 19180,
+				"nome": "Schools, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 19303,
+				"nome": "Escuelas",
+				"num_livros": null
+			},
+			{
+				"id": 19586,
+				"nome": "Social Themes",
+				"num_livros": null
+			},
+			{
+				"id": 22236,
+				"nome": "Magic, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23976,
+				"nome": "Magiciens",
+				"num_livros": null
+			},
+			{
+				"id": 24030,
+				"nome": "Ron Weasley (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24064,
+				"nome": "Sorciers",
+				"num_livros": null
+			},
+			{
+				"id": 24196,
+				"nome": "Harry Potter (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24235,
+				"nome": "Hermione Granger (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24256,
+				"nome": "Magic - Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24258,
+				"nome": "Poudlard (Organisation imaginaire)",
+				"num_livros": null
+			},
+			{
+				"id": 24498,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary organization)",
+				"num_livros": null
+			},
+			{
+				"id": 24502,
+				"nome": "nyt:series_books=2006-09-16",
+				"num_livros": null
+			},
+			{
+				"id": 24526,
+				"nome": "Potter, harry (fictitious character), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24569,
+				"nome": "Magia",
+				"num_livros": null
+			},
+			{
+				"id": 24588,
+				"nome": "Hogwarts school of witchcraft and wizardry (imaginary organization), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24610,
+				"nome": "Potter, Harry (Personnage fictif)",
+				"num_livros": null
+			},
+			{
+				"id": 24614,
+				"nome": "Magos",
+				"num_livros": null
+			},
+			{
+				"id": 24712,
+				"nome": "Orphans & Foster Homes",
+				"num_livros": null
+			},
+			{
+				"id": 24777,
+				"nome": "Écoles",
+				"num_livros": null
+			},
+			{
+				"id": 24795,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary place)",
+				"num_livros": null
+			},
+			{
+				"id": 39638,
+				"nome": "Merveilleux",
+				"num_livros": null
+			},
+			{
+				"id": 40859,
+				"nome": "Harry Potter (Fictional character)",
+				"num_livros": null
+			},
+			{
+				"id": 40967,
+				"nome": "foster homes",
+				"num_livros": null
+			},
+			{
+				"id": 49429,
+				"nome": "Roman fantastique",
+				"num_livros": null
+			},
+			{
+				"id": 103668,
+				"nome": "Warlocks",
+				"num_livros": null
+			},
+			{
+				"id": 134547,
+				"nome": "Quill Award winner",
+				"num_livros": null
+			},
+			{
+				"id": 135129,
+				"nome": "Bengali Detective and mystery stories",
+				"num_livros": null
+			},
+			{
+				"id": 135131,
+				"nome": "nyt:series_books=2006-07-15",
+				"num_livros": null
+			},
+			{
+				"id": 135133,
+				"nome": "Scottish Children’s Book Award winner",
+				"num_livros": null
+			},
+			{
+				"id": 135143,
+				"nome": "adolescence",
+				"num_livros": null
+			},
+			{
+				"id": 135179,
+				"nome": "British Book of the Year Award winner",
+				"num_livros": null
+			},
+			{
+				"id": 135329,
+				"nome": "Fantasiewelt",
+				"num_livros": null
+			},
+			{
+				"id": 135409,
+				"nome": "romans",
+				"num_livros": null
+			},
+			{
+				"id": 135483,
+				"nome": "magie",
+				"num_livros": null
+			},
+			{
+				"id": 135499,
+				"nome": "Phantastische Literatur",
+				"num_livros": null
+			}
+		]
+	},
+	{
+		"id": 114413,
+		"titulo": "Mundo mágico de Harry Potter",
+		"subtitulo": "mitos, lendas e histórias fascinantes",
+		"primeira_data_publicacao": null,
+		"data_publicacao": 2001,
+		"descricao": "Explores the true history, folklore, and mythology behind the magical practices, creatures, and personalities that appear in J.K. Rowling's Harry Potter books.",
+		"capa": "https://covers.openlibrary.org/b/id/12834986-L.jpg",
+		"paginas": 183,
+		"editora": "Sextante",
+		"autores": [
+			{
+				"id": 73665,
+				"nome": "David Colbert",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 744,
+				"nome": "History and criticism",
+				"num_livros": null
+			},
+			{
+				"id": 3805,
+				"nome": "Characters",
+				"num_livros": null
+			},
+			{
+				"id": 6056,
+				"nome": "Juvenile literature",
+				"num_livros": null
+			},
+			{
+				"id": 13172,
+				"nome": "Ouvrages pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 14460,
+				"nome": "English Fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 36220,
+				"nome": "Children's stories, English",
+				"num_livros": null
+			},
+			{
+				"id": 77562,
+				"nome": "Magic in literature",
+				"num_livros": null
+			},
+			{
+				"id": 77566,
+				"nome": "Wizards in literature",
+				"num_livros": null
+			},
+			{
+				"id": 77591,
+				"nome": "Magie dans la littérature",
+				"num_livros": null
+			},
+			{
+				"id": 77642,
+				"nome": "Harry Potter",
+				"num_livros": null
+			}
+		]
+	},
+	{
+		"id": 184562,
+		"titulo": "Harry Potter e as Relíquias da Morte",
+		"subtitulo": null,
+		"primeira_data_publicacao": null,
+		"data_publicacao": 2007,
+		"descricao": "Burdened with the dark, dangerous, and seemingly impossible task of locating and destroying Voldemort's remaining Horcruxes, Harry, feeling alone and uncertain about his future, struggles to find the inner strength he needs to follow the path set out before him.",
+		"capa": null,
+		"paginas": 590,
+		"editora": "Rocco",
+		"autores": [
+			{
+				"id": 22715,
+				"nome": "J. K. Rowling",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 916,
+				"nome": "Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 3318,
+				"nome": "Coming of age",
+				"num_livros": null
+			},
+			{
+				"id": 3733,
+				"nome": "Schools",
+				"num_livros": null
+			},
+			{
+				"id": 4417,
+				"nome": "Wizards",
+				"num_livros": null
+			},
+			{
+				"id": 4684,
+				"nome": "Magic",
+				"num_livros": null
+			},
+			{
+				"id": 24498,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary organization)",
+				"num_livros": null
+			}
+		]
+	},
+	{
+		"id": 27197,
+		"titulo": "Harry Potter e a Ordem da Fénix",
+		"subtitulo": null,
+		"primeira_data_publicacao": 2003,
+		"data_publicacao": 2003,
+		"descricao": null,
+		"capa": null,
+		"paginas": 750,
+		"editora": "Presença",
+		"autores": [
+			{
+				"id": 22715,
+				"nome": "J. K. Rowling",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 29,
+				"nome": "Romans, nouvelles",
+				"num_livros": null
+			},
+			{
+				"id": 361,
+				"nome": "Youth",
+				"num_livros": null
+			},
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 486,
+				"nome": "Reading materials",
+				"num_livros": null
+			},
+			{
+				"id": 499,
+				"nome": "English literature",
+				"num_livros": null
+			},
+			{
+				"id": 879,
+				"nome": "Children's fiction",
+				"num_livros": null
+			},
+			{
+				"id": 916,
+				"nome": "Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 949,
+				"nome": "Conduct of life",
+				"num_livros": null
+			},
+			{
+				"id": 976,
+				"nome": "Children's stories",
+				"num_livros": null
+			},
+			{
+				"id": 1139,
+				"nome": "Family",
+				"num_livros": null
+			},
+			{
+				"id": 1538,
+				"nome": "New York Times bestseller",
+				"num_livros": null
+			},
+			{
+				"id": 1584,
+				"nome": "Romans",
+				"num_livros": null
+			},
+			{
+				"id": 1794,
+				"nome": "Translations from English",
+				"num_livros": null
+			},
+			{
+				"id": 2434,
+				"nome": "Witches",
+				"num_livros": null
+			},
+			{
+				"id": 3124,
+				"nome": "Friendship, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 3147,
+				"nome": "Reading Level-Grade 11",
+				"num_livros": null
+			},
+			{
+				"id": 3149,
+				"nome": "Reading Level-Grade 12",
+				"num_livros": null
+			},
+			{
+				"id": 3318,
+				"nome": "Coming of age",
+				"num_livros": null
+			},
+			{
+				"id": 3485,
+				"nome": "Ficción juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 3733,
+				"nome": "Schools",
+				"num_livros": null
+			},
+			{
+				"id": 3855,
+				"nome": "Friendship",
+				"num_livros": null
+			},
+			{
+				"id": 4015,
+				"nome": "Fiction, fantasy, general",
+				"num_livros": null
+			},
+			{
+				"id": 4417,
+				"nome": "Wizards",
+				"num_livros": null
+			},
+			{
+				"id": 4639,
+				"nome": "Juvenile audience",
+				"num_livros": null
+			},
+			{
+				"id": 4684,
+				"nome": "Magic",
+				"num_livros": null
+			},
+			{
+				"id": 5014,
+				"nome": "Open Library Staff Picks",
+				"num_livros": null
+			},
+			{
+				"id": 6056,
+				"nome": "Juvenile literature",
+				"num_livros": null
+			},
+			{
+				"id": 6926,
+				"nome": "England",
+				"num_livros": null
+			},
+			{
+				"id": 10486,
+				"nome": "Fantasy",
+				"num_livros": null
+			},
+			{
+				"id": 10677,
+				"nome": "Fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11201,
+				"nome": "Romans, nouvelles, etc. pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 11317,
+				"nome": "Adventure and adventurers, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11704,
+				"nome": "England, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 12350,
+				"nome": "Novela fantástica",
+				"num_livros": null
+			},
+			{
+				"id": 12459,
+				"nome": "Fantasy & Magic",
+				"num_livros": null
+			},
+			{
+				"id": 12489,
+				"nome": "Wizards, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 13090,
+				"nome": "Wizards in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 13128,
+				"nome": "Arabic language materials",
+				"num_livros": null
+			},
+			{
+				"id": 13334,
+				"nome": "Roman pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 14460,
+				"nome": "English Fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 15110,
+				"nome": "Junge",
+				"num_livros": null
+			},
+			{
+				"id": 15687,
+				"nome": "England in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 15691,
+				"nome": "Magie",
+				"num_livros": null
+			},
+			{
+				"id": 16800,
+				"nome": "Parapsychology",
+				"num_livros": null
+			},
+			{
+				"id": 17743,
+				"nome": "Novela juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 19027,
+				"nome": "School stories",
+				"num_livros": null
+			},
+			{
+				"id": 19119,
+				"nome": "Spanish language",
+				"num_livros": null
+			},
+			{
+				"id": 19180,
+				"nome": "Schools, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 19303,
+				"nome": "Escuelas",
+				"num_livros": null
+			},
+			{
+				"id": 19522,
+				"nome": "Children's Books/Ages 9-12 Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 19586,
+				"nome": "Social Themes",
+				"num_livros": null
+			},
+			{
+				"id": 19602,
+				"nome": "Traducciones al español",
+				"num_livros": null
+			},
+			{
+				"id": 22236,
+				"nome": "Magic, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23902,
+				"nome": "Magic in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23905,
+				"nome": "Schools in fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23917,
+				"nome": "Boarding school students",
+				"num_livros": null
+			},
+			{
+				"id": 23919,
+				"nome": "Magier",
+				"num_livros": null
+			},
+			{
+				"id": 23947,
+				"nome": "Military aspects",
+				"num_livros": null
+			},
+			{
+				"id": 23976,
+				"nome": "Magiciens",
+				"num_livros": null
+			},
+			{
+				"id": 23993,
+				"nome": "Rollentausch",
+				"num_livros": null
+			},
+			{
+				"id": 24027,
+				"nome": "Imaginärer Schauplatz",
+				"num_livros": null
+			},
+			{
+				"id": 24030,
+				"nome": "Ron Weasley (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24048,
+				"nome": "Dueling",
+				"num_livros": null
+			},
+			{
+				"id": 24058,
+				"nome": "Eventyrlige fortællinger",
+				"num_livros": null
+			},
+			{
+				"id": 24060,
+				"nome": "Witches and warlocks",
+				"num_livros": null
+			},
+			{
+				"id": 24064,
+				"nome": "Sorciers",
+				"num_livros": null
+			},
+			{
+				"id": 24075,
+				"nome": "Das Böse",
+				"num_livros": null
+			},
+			{
+				"id": 24084,
+				"nome": "Magi",
+				"num_livros": null
+			},
+			{
+				"id": 24099,
+				"nome": "Telepathie",
+				"num_livros": null
+			},
+			{
+				"id": 24105,
+				"nome": "Witchcraft",
+				"num_livros": null
+			},
+			{
+				"id": 24164,
+				"nome": "Schüler",
+				"num_livros": null
+			},
+			{
+				"id": 24166,
+				"nome": "Sorciaeres",
+				"num_livros": null
+			},
+			{
+				"id": 24167,
+				"nome": "Fabeltiere",
+				"num_livros": null
+			},
+			{
+				"id": 24194,
+				"nome": "Freundschaft",
+				"num_livros": null
+			},
+			{
+				"id": 24196,
+				"nome": "Harry Potter (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24235,
+				"nome": "Hermione Granger (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24247,
+				"nome": "{acute}Ecoles",
+				"num_livros": null
+			},
+			{
+				"id": 24249,
+				"nome": "Potter, Harry (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24256,
+				"nome": "Magic - Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24258,
+				"nome": "Poudlard (Organisation imaginaire)",
+				"num_livros": null
+			},
+			{
+				"id": 24277,
+				"nome": "Das Gute",
+				"num_livros": null
+			},
+			{
+				"id": 24291,
+				"nome": "Severus Snape (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24388,
+				"nome": "Teacher-student relationships",
+				"num_livros": null
+			},
+			{
+				"id": 24451,
+				"nome": "Existenzkampf",
+				"num_livros": null
+			},
+			{
+				"id": 24498,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary organization)",
+				"num_livros": null
+			},
+			{
+				"id": 24499,
+				"nome": "Troldmænd",
+				"num_livros": null
+			},
+			{
+				"id": 24502,
+				"nome": "nyt:series_books=2006-09-16",
+				"num_livros": null
+			},
+			{
+				"id": 24503,
+				"nome": "Juvenile works",
+				"num_livros": null
+			},
+			{
+				"id": 24509,
+				"nome": "Hate",
+				"num_livros": null
+			},
+			{
+				"id": 24525,
+				"nome": "Weissagung",
+				"num_livros": null
+			},
+			{
+				"id": 24526,
+				"nome": "Potter, harry (fictitious character), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24540,
+				"nome": "Jugendgruppe",
+				"num_livros": null
+			},
+			{
+				"id": 24569,
+				"nome": "Magia",
+				"num_livros": null
+			},
+			{
+				"id": 24588,
+				"nome": "Hogwarts school of witchcraft and wizardry (imaginary organization), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24610,
+				"nome": "Potter, Harry (Personnage fictif)",
+				"num_livros": null
+			},
+			{
+				"id": 24614,
+				"nome": "Magos",
+				"num_livros": null
+			},
+			{
+				"id": 24633,
+				"nome": "Außenseiter",
+				"num_livros": null
+			},
+			{
+				"id": 24657,
+				"nome": "Novela inglesa",
+				"num_livros": null
+			},
+			{
+				"id": 24692,
+				"nome": "Schools - Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24711,
+				"nome": "Lebensrettung",
+				"num_livros": null
+			},
+			{
+				"id": 24712,
+				"nome": "Orphans & Foster Homes",
+				"num_livros": null
+			},
+			{
+				"id": 24731,
+				"nome": "Internat",
+				"num_livros": null
+			},
+			{
+				"id": 24732,
+				"nome": "Lebensgefahr",
+				"num_livros": null
+			},
+			{
+				"id": 24749,
+				"nome": "Boarding schools",
+				"num_livros": null
+			},
+			{
+				"id": 24753,
+				"nome": "Sorcières",
+				"num_livros": null
+			},
+			{
+				"id": 24756,
+				"nome": "Coming of age - Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24777,
+				"nome": "Écoles",
+				"num_livros": null
+			},
+			{
+				"id": 24795,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary place)",
+				"num_livros": null
+			},
+			{
+				"id": 24809,
+				"nome": "Hogwarts Schools of Witchcraft and Wizardry (Imaginary Place)",
+				"num_livros": null
+			}
+		]
+	},
+	{
+		"id": 52352,
+		"titulo": "Harry Potter e o Cálice de Fogo",
+		"subtitulo": null,
+		"primeira_data_publicacao": null,
+		"data_publicacao": null,
+		"descricao": null,
+		"capa": "https://covers.openlibrary.org/b/id/12370355-L.jpg",
+		"paginas": null,
+		"editora": "Rocco",
+		"autores": [
+			{
+				"id": 22715,
+				"nome": "J. K. Rowling",
+				"num_livros": null
+			},
+			{
+				"id": 39025,
+				"nome": "Jim Kay",
+				"num_livros": null
+			}
+		],
+		"generos": [
+			{
+				"id": 325,
+				"nome": "Ficción",
+				"num_livros": null
+			},
+			{
+				"id": 393,
+				"nome": "Juvenile fiction",
+				"num_livros": null
+			},
+			{
+				"id": 486,
+				"nome": "Reading materials",
+				"num_livros": null
+			},
+			{
+				"id": 499,
+				"nome": "English literature",
+				"num_livros": null
+			},
+			{
+				"id": 769,
+				"nome": "Large type books",
+				"num_livros": null
+			},
+			{
+				"id": 879,
+				"nome": "Children's fiction",
+				"num_livros": null
+			},
+			{
+				"id": 916,
+				"nome": "Fiction",
+				"num_livros": null
+			},
+			{
+				"id": 1139,
+				"nome": "Family",
+				"num_livros": null
+			},
+			{
+				"id": 1538,
+				"nome": "New York Times bestseller",
+				"num_livros": null
+			},
+			{
+				"id": 1794,
+				"nome": "Translations from English",
+				"num_livros": null
+			},
+			{
+				"id": 1868,
+				"nome": "Drama",
+				"num_livros": null
+			},
+			{
+				"id": 3124,
+				"nome": "Friendship, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 3146,
+				"nome": "Reading Level-Grade 10",
+				"num_livros": null
+			},
+			{
+				"id": 3147,
+				"nome": "Reading Level-Grade 11",
+				"num_livros": null
+			},
+			{
+				"id": 3149,
+				"nome": "Reading Level-Grade 12",
+				"num_livros": null
+			},
+			{
+				"id": 3423,
+				"nome": "Reading Level-Grade 9",
+				"num_livros": null
+			},
+			{
+				"id": 3485,
+				"nome": "Ficción juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 3733,
+				"nome": "Schools",
+				"num_livros": null
+			},
+			{
+				"id": 3855,
+				"nome": "Friendship",
+				"num_livros": null
+			},
+			{
+				"id": 4417,
+				"nome": "Wizards",
+				"num_livros": null
+			},
+			{
+				"id": 4684,
+				"nome": "Magic",
+				"num_livros": null
+			},
+			{
+				"id": 5014,
+				"nome": "Open Library Staff Picks",
+				"num_livros": null
+			},
+			{
+				"id": 7538,
+				"nome": "award:hugo_award=novel",
+				"num_livros": null
+			},
+			{
+				"id": 7610,
+				"nome": "Hugo Award Winner",
+				"num_livros": null
+			},
+			{
+				"id": 10260,
+				"nome": "Film adaptations",
+				"num_livros": null
+			},
+			{
+				"id": 10486,
+				"nome": "Fantasy",
+				"num_livros": null
+			},
+			{
+				"id": 10648,
+				"nome": "Korean language materials",
+				"num_livros": null
+			},
+			{
+				"id": 10677,
+				"nome": "Fantasy fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11201,
+				"nome": "Romans, nouvelles, etc. pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 11317,
+				"nome": "Adventure and adventurers, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 11704,
+				"nome": "England, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 12459,
+				"nome": "Fantasy & Magic",
+				"num_livros": null
+			},
+			{
+				"id": 12489,
+				"nome": "Wizards, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 13061,
+				"nome": "juvenile literature",
+				"num_livros": null
+			},
+			{
+				"id": 15073,
+				"nome": "orphans",
+				"num_livros": null
+			},
+			{
+				"id": 15110,
+				"nome": "Junge",
+				"num_livros": null
+			},
+			{
+				"id": 15386,
+				"nome": "Jugendbuch",
+				"num_livros": null
+			},
+			{
+				"id": 16729,
+				"nome": "French language",
+				"num_livros": null
+			},
+			{
+				"id": 17743,
+				"nome": "Novela juvenil",
+				"num_livros": null
+			},
+			{
+				"id": 19027,
+				"nome": "School stories",
+				"num_livros": null
+			},
+			{
+				"id": 19180,
+				"nome": "Schools, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 19303,
+				"nome": "Escuelas",
+				"num_livros": null
+			},
+			{
+				"id": 19586,
+				"nome": "Social Themes",
+				"num_livros": null
+			},
+			{
+				"id": 22236,
+				"nome": "Magic, fiction",
+				"num_livros": null
+			},
+			{
+				"id": 23104,
+				"nome": "Action & Adventure",
+				"num_livros": null
+			},
+			{
+				"id": 23146,
+				"nome": "Juvenile films",
+				"num_livros": null
+			},
+			{
+				"id": 24030,
+				"nome": "Ron Weasley (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24064,
+				"nome": "Sorciers",
+				"num_livros": null
+			},
+			{
+				"id": 24084,
+				"nome": "Magi",
+				"num_livros": null
+			},
+			{
+				"id": 24196,
+				"nome": "Harry Potter (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24235,
+				"nome": "Hermione Granger (Fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 24258,
+				"nome": "Poudlard (Organisation imaginaire)",
+				"num_livros": null
+			},
+			{
+				"id": 24498,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary organization)",
+				"num_livros": null
+			},
+			{
+				"id": 24502,
+				"nome": "nyt:series_books=2006-09-16",
+				"num_livros": null
+			},
+			{
+				"id": 24526,
+				"nome": "Potter, harry (fictitious character), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24569,
+				"nome": "Magia",
+				"num_livros": null
+			},
+			{
+				"id": 24588,
+				"nome": "Hogwarts school of witchcraft and wizardry (imaginary organization), fiction",
+				"num_livros": null
+			},
+			{
+				"id": 24614,
+				"nome": "Magos",
+				"num_livros": null
+			},
+			{
+				"id": 24712,
+				"nome": "Orphans & Foster Homes",
+				"num_livros": null
+			},
+			{
+				"id": 24777,
+				"nome": "Écoles",
+				"num_livros": null
+			},
+			{
+				"id": 24795,
+				"nome": "Hogwarts School of Witchcraft and Wizardry (Imaginary place)",
+				"num_livros": null
+			},
+			{
+				"id": 32111,
+				"nome": "Mord",
+				"num_livros": null
+			},
+			{
+				"id": 36220,
+				"nome": "Children's stories, English",
+				"num_livros": null
+			},
+			{
+				"id": 40560,
+				"nome": "Novelas inglesas",
+				"num_livros": null
+			},
+			{
+				"id": 40563,
+				"nome": "children's stories",
+				"num_livros": null
+			},
+			{
+				"id": 40571,
+				"nome": "fictitious schools",
+				"num_livros": null
+			},
+			{
+				"id": 40584,
+				"nome": "Inglaterra",
+				"num_livros": null
+			},
+			{
+				"id": 40605,
+				"nome": "juvenile audience",
+				"num_livros": null
+			},
+			{
+				"id": 40611,
+				"nome": "Wiederbelebung",
+				"num_livros": null
+			},
+			{
+				"id": 40614,
+				"nome": "School",
+				"num_livros": null
+			},
+			{
+				"id": 40635,
+				"nome": "Hugo Award",
+				"num_livros": null
+			},
+			{
+				"id": 40659,
+				"nome": "award:hugo_award=2001",
+				"num_livros": null
+			},
+			{
+				"id": 40660,
+				"nome": "Películas cinematográficas juveniles",
+				"num_livros": null
+			},
+			{
+				"id": 40666,
+				"nome": "Bewährung",
+				"num_livros": null
+			},
+			{
+				"id": 40667,
+				"nome": "juvenile works",
+				"num_livros": null
+			},
+			{
+				"id": 40674,
+				"nome": "Chinese fiction",
+				"num_livros": null
+			},
+			{
+				"id": 40676,
+				"nome": "Translations into Marathi",
+				"num_livros": null
+			},
+			{
+				"id": 40749,
+				"nome": "Bengali detective and mystery stories",
+				"num_livros": null
+			},
+			{
+				"id": 40766,
+				"nome": "Waisenkind",
+				"num_livros": null
+			},
+			{
+				"id": 40771,
+				"nome": "Potter, harry (fictitious character)",
+				"num_livros": null
+			},
+			{
+				"id": 40774,
+				"nome": "English Fantasy literature",
+				"num_livros": null
+			},
+			{
+				"id": 40778,
+				"nome": "Hechiceros",
+				"num_livros": null
+			},
+			{
+				"id": 40787,
+				"nome": "Intrige",
+				"num_livros": null
+			},
+			{
+				"id": 40859,
+				"nome": "Harry Potter (Fictional character)",
+				"num_livros": null
+			},
+			{
+				"id": 40880,
+				"nome": "magier",
+				"num_livros": null
+			},
+			{
+				"id": 40895,
+				"nome": "Rettung",
+				"num_livros": null
+			},
+			{
+				"id": 40918,
+				"nome": "Potter, Harry (Personaje literario)",
+				"num_livros": null
+			},
+			{
+				"id": 40925,
+				"nome": "Sport",
+				"num_livros": null
+			},
+			{
+				"id": 40936,
+				"nome": "Sorcellerie",
+				"num_livros": null
+			},
+			{
+				"id": 40937,
+				"nome": "Wettkampf",
+				"num_livros": null
+			},
+			{
+				"id": 40939,
+				"nome": "Romans nouvelles etc. pour la jeunesse",
+				"num_livros": null
+			},
+			{
+				"id": 40967,
+				"nome": "foster homes",
+				"num_livros": null
+			}
+		]
+	}
+]
