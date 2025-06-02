@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import { getLivroById } from "../api/livroApi";
 import logo from "../assets/logo2.png";
 import lupa from "../assets/lupa.png";
-import { avaliar, getAvaliacaoByUsuarioAndLivro } from "../api/avaliacaoApi";
+import { avaliar, deleteAvaliacao, getAvaliacaoByUsuarioAndLivro, patchAvaliacao } from "../api/avaliacaoApi";
 import StarRating from "../components/StarRating";
 import semCapaImagem from '../assets/sem-capa.jpg';
+import HistoryIcon from '../components/HistoryIcon';
+import StdHeader from "../components/StdHeader";
 
 function Livro() {
   const navigate = useNavigate();
@@ -13,10 +15,9 @@ function Livro() {
   const { id } = useParams(); // captura o :id da URL
   const [livro, setLivro] = useState(null);
   const [usuario, setUsuario] = useState(null);
-  const [avaliacao, setAvaliacao] = useState(null);
+  const [avaliacao, setAvaliacao] = useState({ id: null, nota: 0 });;
   const [loading, setLoading] = useState(true);
 
-  // Simulação de fetch dos dados com base no ID
   useEffect(() => {
     const token = localStorage.getItem('token');
     const usuarioRaw = localStorage.getItem('usuario');
@@ -31,7 +32,6 @@ function Livro() {
     async function buscarLivro() {
       setLoading(true);
       try {
-        // Substitua por sua lógica real de fetch:
         const dados = await getLivroById(id);
         setLivro(dados);
       } catch (erro) {
@@ -42,51 +42,52 @@ function Livro() {
 
     buscarLivro();
 
+    document.body.classList.add("home");
+    return () => document.body.classList.remove("home");
+  }, [id]);
+
+  // Novo useEffect para buscar avaliação somente quando livro e usuario estiverem definidos
+  useEffect(() => {
+    if (!usuario || !livro) return; // espera os dois estarem definidos
+
     async function getAvalicao() {
       const params = {
         usuario_id: usuario.id,
         livro_id: livro.id
       }
-      getAvaliacaoByUsuarioAndLivro(params).then(a => setAvaliacao(a.nota));
+      try {
+        const a = await getAvaliacaoByUsuarioAndLivro(params);
+        if (a != null) setAvaliacao(a);
+      } catch (erro) {
+        setAvaliacao(0);
+      }
     }
 
     getAvalicao();
+  }, [usuario, livro]);
 
-    document.body.classList.add("home");
-    return () => document.body.classList.remove("home"); // limpa ao sair
-  }, [id]);
-
-  useEffect(() => {
-    // Eu coloco alguma coisa aqui????
-  }, [avaliacao]);
 
   if (loading) return <p>Carregando livro...</p>;
   if (!livro) return <p>Livro não encontrado.</p>;
 
   const handleAvaliacao = (nota) => {
-    const avaliacao = {
+    const avaliacaoNova = {
         usuario_id: usuario.id,
         livro_id: livro.id,
         nota: nota
     }
-    avaliar(avaliacao).then(a => setAvaliacao(a.nota));
+    if (avaliacao.id == null) avaliar(avaliacaoNova).then(a => setAvaliacao(a));
+    else if(avaliacao.nota != avaliacaoNova.nota) patchAvaliacao(avaliacao.id, {nota: nota}).then(a => setAvaliacao(a));
+    else {
+      deleteAvaliacao(avaliacao.id);
+      setAvaliacao({id: null, nota: 0});
+      alert("Livro removido do histórico.");
+    }
   }
 
   return (
     <div className="home">
-      <header>
-              <div className="header-container">
-                <Link to={"/"}>
-                  <div className="logo-header">
-                    <img src={logo} alt="Logo RecLivros" className="logo-header" />
-                  </div>
-                </Link>
-                <form className="search-box" action="/buscar" method="GET">
-                  <input type="text" name="q" placeholder="Buscar..." />
-                  <button type="submit"><img src={lupa} className="lupa" /></button>
-                </form>
-              </div>
-      </header>
+      <StdHeader usuario={usuario}/>
 
       <div className="capa-e-titulo">
         <img src={livro.capa || semCapaImagem} alt={livro.titulo} className="card-capa" />
@@ -95,7 +96,7 @@ function Livro() {
 
       <div>
         <p style={{paddingLeft: "2%", fontSize: "24px"}}>Avalie este livro:</p>
-        <StarRating value={avaliacao} onChange={handleAvaliacao} />
+        <StarRating value={avaliacao.nota} onChange={handleAvaliacao} />
       </div>
         
       <div className="livro-detalhes-wrapper">

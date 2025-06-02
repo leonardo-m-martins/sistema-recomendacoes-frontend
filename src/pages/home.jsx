@@ -7,6 +7,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import './exemplo.json';
 import semCapaImagem from '../assets/sem-capa.jpg';
 import { getLivros } from '../api/livroApi';
+import HistoryIcon from '../components/HistoryIcon';
+import LogoutIcon from '../components/LogoutIcon';
+import StdHeader from '../components/StdHeader';
 
 function Home() {
     const navigate = useNavigate();
@@ -14,8 +17,10 @@ function Home() {
   const [recomendados, setRecomendados] = useState([]);
   const [emAlta, setEmAlta] = useState([]);
   var [catalogo, setCatalogo] = useState([]);
-  const [totalPaginas, setPageNumber] = useState([]);
+  const [totalPaginas, setTotalPaginas] = useState([]);
   const [paginaAtual, setPaginaAtual] = useState([]);
+  const [usuario, setUsuario] = useState(null);
+  const [inputPagina, setInputPagina] = useState(paginaAtual);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -26,28 +31,28 @@ function Home() {
       return;
     }
 
-    const usuario = JSON.parse(usuarioRaw);
+    const usuarioParsed = JSON.parse(usuarioRaw);
+    setUsuario(usuarioParsed);
 
     setPaginaAtual(1);
-
-    // Carregar os dados do backend
-    const carregarDados = async () => {
-      try {
-        const conteudo = await recomendacaoConteudo(usuario.id);
-        const colaborativa = await recomendacaoConteudo(usuario.id);
-
-        setRecomendados(conteudo);
-        setEmAlta(colaborativa);
-      } catch (error) {
-        console.error('Erro ao buscar recomendações:', error);
-      }
-    };
-
-    carregarDados();
 
     document.body.classList.add("home");
     return () => document.body.classList.remove("home"); // limpa ao sair
   }, []);
+
+  useEffect(() => {
+    if (usuario == null) return;
+    // Carregar os dados do backend
+    const carregarDados = async () => {
+      const conteudo = await recomendacaoConteudo(usuario.id);
+      const colaborativa = await recomendacaoColaborativa(usuario.id);
+
+      setRecomendados(conteudo);
+      setEmAlta(colaborativa);
+    };
+
+    carregarDados();
+  }, [usuario])
 
   useEffect(() => {
     const carregarCatalogo = async () => {
@@ -55,11 +60,12 @@ function Home() {
         const params = {
           page: paginaAtual - 1, // ajuste de index (página 1 no frontend = 0 no backend)
           size: 40,
+          sortBy: "id"
         };
 
-        const page = await getLivros(params);
-        setCatalogo(page.content);
-        setPageNumber(page.totalPages);
+        const resultado = await getLivros(params);
+        setCatalogo(resultado.content);
+        setTotalPaginas(resultado.page.totalPages);
       } catch (error) {
         console.error("Erro ao carregar catálogo:", error);
       }
@@ -116,7 +122,7 @@ function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const valor = parseInt(e.target.value);
+    const valor = parseInt(inputPagina, 10);
     if (!isNaN(valor) && valor >= 1 && valor <= totalPaginas) {
       setPaginaAtual(valor);
     }
@@ -124,24 +130,11 @@ function Home() {
 
   return (
     <div className="home">
-      <header>
-        <div className="header-container">
-          <Link to={"/"}>
-            <div className="logo-header">
-              <img src={logo} alt="Logo RecLivros" className="logo-header" />
-            </div>
-          </Link>
-          <form className="search-box" action="/buscar" method="GET">
-            <input type="text" name="q" placeholder="Buscar..." />
-            <button type="submit"><img src={lupa} className="lupa" /></button>
-          </form>
-        </div>
-      </header>
+      <StdHeader usuario={usuario}/>
 
       <main>
         <section className="hero">
-          <h2>Destaque do dia</h2>
-          <p>"Descubra sua próxima leitura favorita com nossas recomendações inteligentes."</p>
+          <p>Descubra sua próxima leitura favorita com nossas recomendações inteligentes.</p>
         </section>
 
         <section className="row">
@@ -150,7 +143,7 @@ function Home() {
         </section>
 
         <section className="row">
-          <h3>Recomendado por outros usuários:</h3>
+          <h3>Recomendado por outros usuários</h3>
           {renderLivros(emAlta)}
         </section>
 
@@ -159,20 +152,24 @@ function Home() {
           <div className="paginas-container">
             <button className="paginas-button" onClick={handleAnterior} disabled={paginaAtual === 1}>Anterior</button>
 
+            <button className="paginas-button" onClick={handleProxima} disabled={paginaAtual === totalPaginas}>Próxima</button>
+
             <form onSubmit={handleSubmit} className="pagina-form">
               <label>
-                Página
+                Página  
                 <input
                   type="number"
-                  value={paginaAtual}
+                  value={inputPagina}
+                  onChange={(e) => setInputPagina(e.target.value)}
+                  placeholder={paginaAtual}
                   max={totalPaginas}
+                  min="1"
                   className="paginas-text-box"
                 />
+                <span> de {totalPaginas}</span>
               </label>
-              <span>de {totalPaginas}</span>
+              <button type="submit" className="paginas-button">Enviar</button>
             </form>
-
-            <button className="paginas-button" onClick={handleProxima} disabled={paginaAtual === totalPaginas}>Próxima</button>
           </div>
           {renderLivrosCatalogo(catalogo)}
         </section>

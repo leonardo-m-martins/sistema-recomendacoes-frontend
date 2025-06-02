@@ -5,12 +5,15 @@ import lupa from '../assets/lupa.png';
 import { Link, useNavigate } from 'react-router-dom';
 import semCapaImagem from '../assets/sem-capa.jpg';
 import { historico } from '../api/usuarioApi';
+import HistoryIcon from '../components/HistoryIcon';
+import StdHeader from '../components/StdHeader';
 
 function Historico() {
   const navigate = useNavigate();
   const [resultados, setResultados] = useState([]);
   const [totalPaginas, setTotalPaginas] = useState(1);
   const [paginaAtual, setPaginaAtual] = useState(1);
+  const [usuario, setUsuario] = useState(null);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -21,13 +24,18 @@ function Historico() {
       return;
     }
 
-    const usuario = JSON.parse(usuarioRaw);
+    setUsuario(JSON.parse(usuarioRaw));
 
+    document.body.classList.add("home");
+    return () => document.body.classList.remove("home");
+  }, []);
+
+  useEffect(() => {
     async function fetchHistorico() {
+      if (usuario == null) return;
       try {
-        const livros = await historico(usuario.id);
-        setResultados(livros);
-        setTotalPaginas(Math.ceil(livros.length / 20));
+        historico(usuario.id).then(h => setResultados(h));
+        setTotalPaginas(Math.ceil(resultados.length / 20));
         setPaginaAtual(1); // Começa na primeira página
       } catch (erro) {
         console.error('Erro ao buscar histórico:', erro);
@@ -35,10 +43,7 @@ function Historico() {
     }
 
     fetchHistorico();
-
-    document.body.classList.add("home");
-    return () => document.body.classList.remove("home");
-  }, []);
+  }, [usuario])
 
   const renderResultados = (livros) => (
     <div className="livros-grid">
@@ -77,19 +82,7 @@ function Historico() {
 
   return (
     <div className="home">
-      <header>
-        <div className="header-container">
-          <Link to={'/'}>
-            <div className="logo-header">
-              <img src={logo} alt="Logo RecLivros" className="logo-header" />
-            </div>
-          </Link>
-          <form className="search-box" action="/buscar" method="GET">
-            <input type="text" name="q" placeholder="Buscar..." />
-            <button type="submit"><img src={lupa} className="lupa" /></button>
-          </form>
-        </div>
-      </header>
+      <StdHeader usuario={usuario}/>
 
       <main>
         <section className="row">

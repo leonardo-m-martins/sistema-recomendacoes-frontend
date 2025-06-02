@@ -1,0 +1,14 @@
+.history-icon {
+  font-size: 32px;
+  color: darkorange;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.2s ease;
+  padding-top: 8px;
+}
+
+.history-icon:hover {
+  color: orangered;
+}
+

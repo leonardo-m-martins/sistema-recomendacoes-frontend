@@ -1,0 +1,11 @@
+.logout-icon {
+  font-size: 40px;
+  color: darkorange;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding-top: 4px;
+}
+
+.logout-icon:hover {
+  color: orangered;
+}

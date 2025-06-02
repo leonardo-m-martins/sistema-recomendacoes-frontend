@@ -19,3 +19,7 @@
 .star:hover {
   color: orange;
 }
+
+.star.active {
+  color: gold;
+}

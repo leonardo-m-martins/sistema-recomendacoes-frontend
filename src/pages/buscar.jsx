@@ -6,6 +6,8 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import semCapaImagem from '../assets/sem-capa.jpg';
 import page from './catalogo-exemplo.json';
 import { searchLivros } from '../api/livroApi';
+import HistoryIcon from '../components/HistoryIcon';
+import StdHeader from '../components/StdHeader';
 
 function Buscar() {
   const navigate = useNavigate();
@@ -16,6 +18,7 @@ function Buscar() {
   const [resultados, setResultados] = useState([]);
   const [totalPaginas, setPageNumber] = useState(0);
   const [paginaAtual, setPaginaAtual] = useState(0);
+  const [usuario, setUsuario] = useState([]);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -25,6 +28,8 @@ function Buscar() {
       navigate('/login');
       return;
     }
+
+    setUsuario(JSON.parse(usuarioRaw));
 
     document.body.classList.add("home");
     return () => document.body.classList.remove("home");
@@ -79,19 +84,7 @@ function Buscar() {
 
   return (
     <div className="home">
-      <header>
-        <div className="header-container">
-          <Link to={'/'}>
-            <div className="logo-header">
-              <img src={logo} alt="Logo RecLivros" className="logo-header" />
-            </div>
-          </Link>
-          <form className="search-box" action="/buscar" method="GET">
-            <input type="text" name="q" placeholder="Buscar..." defaultValue={termoBusca} />
-            <button type="submit"><img src={lupa} className="lupa" /></button>
-          </form>
-        </div>
-      </header>
+      <StdHeader usuario={usuario}/>
 
       <main>
         <section className="row">

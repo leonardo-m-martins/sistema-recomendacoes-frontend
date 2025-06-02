@@ -1,0 +1,34 @@
+.header-container {
+  background-color: #763f21;
+  max-height: 40px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  z-index: 19;
+}
+
+.logo img {
+  max-width: 80%;
+  height: auto;
+  z-index: 20;
+}
+
+.logo-header {
+  text-align: left;
+  margin-bottom: 1rem;
+  z-index: 19;
+}
+
+.logo-header img {
+  margin-top: 20px;
+  max-width: 30%;
+  height: auto;
+  z-index: 20;
+}

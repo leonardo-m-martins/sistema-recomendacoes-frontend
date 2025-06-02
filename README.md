@@ -1,12 +1,41 @@
-# React + Vite
+# RecLivros - Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o front-end do sistema de recomendações de livros **RecLivros**, desenvolvido em React.js.
 
-Currently, two official plugins are available:
+## 📋 Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (versão recomendada: 18+)
+- npm (ou yarn)
 
-## Expanding the ESLint configuration
+## 🚀 Instalação
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone o repositório e instale as dependências:
+
+git clone https://github.com/seu-usuario/reclivros-frontend.git  
+cd reclivros-frontend  
+npm install
+
+## 🧪 Executando em ambiente de desenvolvimento
+
+npm start
+
+A aplicação estará disponível em: http://localhost:3000
+
+## 🧱 Estrutura
+
+- src/components: Componentes reutilizáveis como barra de busca, ícones, cabeçalho etc.  
+- src/pages: Páginas principais da aplicação.  
+- src/styles: Arquivos CSS separados para cada componente.
+
+## 🔐 Autenticação
+
+O token de autenticação JWT é salvo no localStorage.  
+O logout remove o token e redireciona o usuário para a tela de login.
+
+## 🔄 Comunicação com o back-end
+
+O front-end consome a API REST do back-end em Java (Spring Boot) para buscar livros, avaliar, e gerar recomendações.
+
+## 📄 Licença
+
+Este projeto é acadêmico e não possui licença de uso comercial.

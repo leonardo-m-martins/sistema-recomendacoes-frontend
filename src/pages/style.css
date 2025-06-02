@@ -88,42 +88,6 @@ input {
   text-decoration: underline;
 }
 
-.logo {
-  text-align: center;
-  margin-bottom: 1rem;
-  z-index: 19;
-}
-
-.logo img {
-  max-width: 80%;
-  height: auto;
-  z-index: 20;
-}
-
-.logo-header {
-  text-align: left;
-  margin-bottom: 1rem;
-  z-index: 19;
-}
-
-.logo-header img {
-  margin-top: 40px;
-  max-width: 15%;
-  height: auto;
-  z-index: 20;
-}
-
-
-header {
-  background-color: #763f21;
-  max-height: 40px;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  color: white;
-  z-index: 10;
-}
-
 main {
   padding: 2rem;
 }
@@ -341,6 +305,9 @@ select:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  gap: 40px; /* espaço entre logo, form e ícone */
+  padding: 0 16px; /* só pra dar um espaçamento horizontal geral */
 }
 
 .paginas-container {
@@ -368,4 +335,11 @@ select:focus {
 
 .paginas-button:hover {
   background-color: #4b2714;
+}
+
+.pagina-form {
+  margin-left: auto; /* empurra o form para a direita */
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
