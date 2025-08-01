@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
-import { cadastrar, login } from '../api/authApi';
-import './style.css';
+import { cadastrar, guestLogin, login } from '../api/authApi';
+// import './style.css';
 import logo from '../assets/logo.png';
+import bookshelf from '../assets/bookshelf.jpg'
 import { redirect, useNavigate } from 'react-router-dom';
+import { BackgroundBookshelf } from '../components/BackgroundBookshelf';
+import { LoginBox } from '../components/LoginBox';
+import { InputField } from '../components/InputField';
+import { BigBrownButton } from '../components/BigBrownButton';
+import { BrownLink } from '../components/BrownLink';
 
 function Login() {
   const navigate = useNavigate();
@@ -93,43 +99,63 @@ function Login() {
     }
   };
 
+  const loginAsGuest = async (e) => {
+    e.preventDefault();
+
+    const dados = await guestLogin();
+    console.log("Convidado logado.");
+
+    localStorage.setItem('token', dados.token);
+    localStorage.setItem('usuario', JSON.stringify(dados.usuario));
+
+    navigate('/');
+  }
+
   return (
-    <div className="cadastro container">
-      <div className="logo">
+    <BackgroundBookshelf>
+      <LoginBox>
         <img src={logo} alt="Logo RecLivros" />
-      </div>
-      <h1 style={{ textAlign: 'left' }}>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="usuario">Nome ou Email</label>
-        <input 
-          type="text" 
-          id="usuario" 
-          name="usuario" 
-          value={formData.usuario} 
-          onChange={handleChange} 
-          required 
-        />
-        {errors.usuario && <span className="error">{errors.usuario}</span>}
+        <h1 className="text-2xl text-left pb-4 font-bold">Login</h1>
+        <form onSubmit={handleSubmit}>
+          <InputField
+            label="Nome ou Email"
+            id="usuario"
+            name="usuario"
+            value={formData.usuario}
+            onChange={handleChange}
+            error={errors.usuario}
+            required
+          />
 
-        <label htmlFor="senha">Senha</label>
-        <input 
-          type="password" 
-          id="senha" 
-          name="senha" 
-          value={formData.senha} 
-          onChange={handleChange} 
-          required 
-        />
-        {errors.senha && <span className="error">{errors.senha}</span>}
+          <InputField
+            label="Senha"
+            id="senha"
+            name="senha"
+            type="password"
+            value={formData.senha}
+            onChange={handleChange}
+            error={errors.senha}
+            required
+          />
 
-        {errors.geral && <div className="error">{errors.geral}</div>}
+          {errors.geral && <div className="error">{errors.geral}</div>}
 
-        <button type="submit" className="cadastro-button">Entrar</button>
-      </form>
-      <div className="login-link">
-        Ainda não tem conta? <a href="/cadastro">Cadastre-se</a>
-      </div>
-    </div>
+          <br className="my-2" />
+
+          <BigBrownButton label="Entrar" type="submit" />
+        </form>
+        <div className="flex items-center my-4">
+          <hr className="flex-grow border-t border-gray-600" />
+          <span className="mx-4 text-gray-800">OU</span>
+          <hr className="flex-grow border-t border-gray-600" />
+        </div>
+        <BigBrownButton label="Entrar como convidado" onClick={loginAsGuest} />
+        <br />
+        <div className="text-center">
+          Ainda não tem conta? <BrownLink to="/cadastro" title="cadastro">Cadastre-se</BrownLink>
+        </div>
+      </LoginBox>
+    </BackgroundBookshelf>
   );
 }
 

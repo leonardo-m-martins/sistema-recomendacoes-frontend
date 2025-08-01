@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
-import "./StarRating.css";
 
 const StarRating = ({ value = 0, onChange }) => {
   const [hovered, setHovered] = useState(0);
@@ -12,17 +11,18 @@ const StarRating = ({ value = 0, onChange }) => {
   }, [value]);
 
   return (
-    <div className="star-rating">
+    <div className="flex gap-1 text-gray-400 cursor-pointer">
       {[1, 2, 3, 4, 5].map((star) => (
         <FaStar
           key={star}
-          className={`star ${star <= (hovered || selected) ? "active" : ""}`}
+          className={`transition-colors duration-300 selection:text-gold hover:text-gold active:text-gold ${star <= (hovered || selected) ? "text-gold" : ""}`}
           onMouseEnter={() => setHovered(star)}
           onMouseLeave={() => setHovered(0)}
           onClick={() => {
             setSelected(star);
             if (onChange) onChange(star);
           }}
+          size={32}
         />
       ))}
     </div>

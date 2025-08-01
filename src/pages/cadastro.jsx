@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
 import { cadastrar } from '../api/authApi';
-import './style.css';
+// import './style.css';
 import logo from '../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
+import { BackgroundBookshelf } from '../components/BackgroundBookshelf';
+import { LoginBox } from '../components/LoginBox';
+import { InputField } from '../components/InputField';
+import { BigBrownButton } from '../components/BigBrownButton';
+import { BrownLink } from '../components/BrownLink';
 
 function Cadastro() {
   const navigate = useNavigate();
@@ -57,15 +62,13 @@ function Cadastro() {
   };
 
   return (
-    <div className="cadastro">
-      <div className="container">
-        <div className="logo">
-          <img src={logo} alt="Logo RecLivros" />
-        </div>
-        <h1 style={{ textAlign: 'left' }}>Cadastro</h1>
+    <BackgroundBookshelf>
+      <LoginBox>
+        <img src={logo} alt="Logo RecLivros" />
+        <h1 className="text-2xl text-left pb-4 font-bold">Cadastro</h1>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="nome">Nome</label>
-          <input
+          <InputField 
+            label="Nome"
             type="text"
             id="nome"
             name="nome"
@@ -73,37 +76,79 @@ function Cadastro() {
             onChange={handleChange}
             required
           />
-          {errors.nome && <p className="error">{errors.nome}</p>}
-
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
+          <InputField
+            label="Email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
           />
-          {errors.email && <p className="error">{errors.email}</p>}
-
-          <label htmlFor="senha">Senha</label>
-          <input
-            type="password"
+          <InputField
+            label="Senha"
             id="senha"
             name="senha"
             value={formData.senha}
             onChange={handleChange}
             required
           />
-          {errors.senha && <p className="error">{errors.senha}</p>}
-
-          <button type="submit" className="cadastro-button">Cadastrar</button>
+          <br className="my-2"/>
+          <BigBrownButton label="Cadastrar" type="submit" />
+          <br />
+          <div className="text-center">
+            <p>Já tem conta? <BrownLink to="/login" title="Login">Faça login</BrownLink></p>
+          </div>
         </form>
-        <div className="login-link">
-          Já tem conta? <a href="/login">Faça login</a>
-        </div>
-      </div>
-    </div>
+
+      </LoginBox>
+    </BackgroundBookshelf>
+    // <div className="cadastro">
+    //   <div className="container">
+    //     <div className="logo">
+    //       <img src={logo} alt="Logo RecLivros" />
+    //     </div>
+    //     <h1 style={{ textAlign: 'left' }}>Cadastro</h1>
+    //     <form onSubmit={handleSubmit}>
+    //       <label htmlFor="nome">Nome</label>
+    //       <input
+    //         type="text"
+    //         id="nome"
+    //         name="nome"
+    //         value={formData.nome}
+    //         onChange={handleChange}
+    //         required
+    //       />
+    //       {errors.nome && <p className="error">{errors.nome}</p>}
+
+    //       <label htmlFor="email">Email</label>
+    //       <input
+    //         type="email"
+    //         id="email"
+    //         name="email"
+    //         value={formData.email}
+    //         onChange={handleChange}
+    //         required
+    //       />
+    //       {errors.email && <p className="error">{errors.email}</p>}
+
+    //       <label htmlFor="senha">Senha</label>
+    //       <input
+    //         type="password"
+    //         id="senha"
+    //         name="senha"
+    //         value={formData.senha}
+    //         onChange={handleChange}
+    //         required
+    //       />
+    //       {errors.senha && <p className="error">{errors.senha}</p>}
+
+    //       <button type="submit" className="cadastro-button">Cadastrar</button>
+    //     </form>
+    //     <div className="login-link">
+    //       Já tem conta? <a href="/login">Faça login</a>
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

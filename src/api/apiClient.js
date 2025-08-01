@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/api', // URL base da sua API
+  baseURL: 'http://localhost:8080/', // TODO: criar variável de ambiente.
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',

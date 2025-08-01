@@ -1,6 +1,5 @@
-import { MdLogout } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import "./LogoutIcon.css";
+import { TbLogout2 } from "react-icons/tb";
 
 function LogoutIcon() {
   const navigate = useNavigate();
@@ -15,8 +14,9 @@ function LogoutIcon() {
     <div
       onClick={handleLogout}
       title="Sair"
+      className="flex text-amber-500 hover:text-amber-600 cursor-pointer mr-4"
     >
-      <MdLogout className="logout-icon" />
+      <TbLogout2 size={40} />
     </div>
   );
 }

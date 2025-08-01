@@ -24,3 +24,15 @@ export const login = async (usuario) => {
     throw error;
   }
 };
+
+export const guestLogin = async () => {
+  try {
+    const response = await apiClient.post('/auth/guest');
+    return response.data;
+  } catch (error) {
+    if (error.response) {
+      throw error.response.data;
+    }
+    throw error;
+  }
+}

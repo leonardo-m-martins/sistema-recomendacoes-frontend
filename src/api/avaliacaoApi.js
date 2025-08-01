@@ -19,3 +19,8 @@ export const getAvaliacaoByUsuarioAndLivro = async (params) => {
     if (response.status == 404) return null;
     return response.data;
 }
+
+export const getTopLivros = async (params) => {
+    const response = await apiClient.get('/avaliacao/top-livros', { params });
+    return response.data;
+}

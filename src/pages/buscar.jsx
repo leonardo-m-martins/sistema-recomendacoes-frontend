@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import './style.css';
-import logo from '../assets/logo2.png';
-import lupa from '../assets/lupa.png';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import semCapaImagem from '../assets/sem-capa.jpg';
-import page from './catalogo-exemplo.json';
 import { searchLivros } from '../api/livroApi';
-import HistoryIcon from '../components/HistoryIcon';
 import StdHeader from '../components/StdHeader';
+import { PeachMain } from '../components/PeachMain';
+import BookGrid from '../components/BookGrid';
+import BookCard from '../components/BookCard';
+import { RenderBooksGrid } from '../components/RenderBooksGrid';
 
 function Buscar() {
   const navigate = useNavigate();
@@ -42,27 +40,11 @@ function Buscar() {
     }
       
     searchLivros(params).then(filtrados => {setResultados(filtrados)});
+    console.log(resultados);
 
     setPageNumber(Math.ceil(resultados.length / 20));
     setPaginaAtual(1);
   }, [termoBusca]);
-
-  const renderResultados = (livros) => (
-    <div className="livros-grid">
-      {livros.map((livro) => (
-        <Link to={`/livro/${livro.id}`} className="link-livro" key={livro.id}>
-          <div className="book-wrapper">
-            <div className="book-card">
-              <img src={livro.capa || semCapaImagem} alt={livro.titulo} />
-            </div>
-            <div className="book-title">
-              <p>{livro.titulo}</p>
-            </div>
-          </div>
-        </Link>
-      ))}
-    </div>
-  );
 
   const handleAnterior = () => {
     if (paginaAtual > 1) setPaginaAtual(paginaAtual - 1);
@@ -80,37 +62,22 @@ function Buscar() {
     }
   };
 
-  const livrosPaginados = resultados.slice((paginaAtual - 1) * 20, paginaAtual * 20);
+  const getLivrosByQuery = useCallback(async (params) => {
+    params["q"] = termoBusca;
+    return await searchLivros(params);
+  }, [termoBusca]);
 
   return (
-    <div className="home">
+    <div>
       <StdHeader usuario={usuario}/>
 
-      <main>
+      <PeachMain>
         <section className="row">
           <h3>Resultados para "{termoBusca}"</h3>
-          <div className="paginas-container">
-            <button className="paginas-button" onClick={handleAnterior} disabled={paginaAtual === 1}>Anterior</button>
 
-            <form onSubmit={handleSubmit} className="pagina-form">
-              <label>
-                Página
-                <input
-                  type="number"
-                  value={paginaAtual}
-                  max={totalPaginas}
-                  className="paginas-text-box"
-                />
-              </label>
-              <span>de {totalPaginas}</span>
-            </form>
-
-            <button className="paginas-button" onClick={handleProxima} disabled={paginaAtual === totalPaginas}>Próxima</button>
-          </div>
-
-          {renderResultados(livrosPaginados)}
+          <RenderBooksGrid genericBookGetterFunction={getLivrosByQuery} />
         </section>
-      </main>
+      </PeachMain>
     </div>
   );
 }

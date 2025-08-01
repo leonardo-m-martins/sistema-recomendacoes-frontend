@@ -13,6 +13,7 @@ export const getLivroById = async (id) => {
 export const searchLivros = async (params) => {
     try {
         const response = await apiClient.get('/livro/search', { params });
+        console.log(response);
         return response.data;
     } catch (error) {
         if (error.response) {

@@ -1,13 +1,16 @@
-import React from "react";
-import lupa from "../assets/lupa.png"; // ajuste o caminho se necessário
-import "./SearchBox.css"; // ou onde estiver seu CSS
+import { FaSearch } from "react-icons/fa";
 
 function SearchBox() {
   return (
-    <form className="search-box" action="/buscar" method="GET">
-      <input type="text" name="q" placeholder="Buscar..." />
-      <button type="submit">
-        <img src={lupa} alt="Buscar" className="lupa" />
+    <form className="items-center flex ml-auto mr-1" action="/buscar" method="GET">
+      <input 
+        className="bg-white placeholder-gray-400 text-black rounded-l-md h-10 p-4" 
+        type="text" 
+        name="q" 
+        placeholder="Buscar..." 
+      />
+      <button className="bg-amber-500 hover:bg-amber-600 rounded-r-md cursor-pointer p-2 h-10 w-10" type="submit" title="Buscar no catálogo">
+        <FaSearch size={24} color="black"/>
       </button>
     </form>
   );

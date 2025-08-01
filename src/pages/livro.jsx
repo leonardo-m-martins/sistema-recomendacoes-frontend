@@ -1,13 +1,14 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getLivroById } from "../api/livroApi";
-import logo from "../assets/logo2.png";
-import lupa from "../assets/lupa.png";
 import { avaliar, deleteAvaliacao, getAvaliacaoByUsuarioAndLivro, patchAvaliacao } from "../api/avaliacaoApi";
 import StarRating from "../components/StarRating";
 import semCapaImagem from '../assets/sem-capa.jpg';
-import HistoryIcon from '../components/HistoryIcon';
 import StdHeader from "../components/StdHeader";
+import { PeachMain } from "../components/PeachMain";
+import { BookDetailsContainer } from "../components/BookDetailsContainer";
+import { BookTag } from "../components/BookTag";
+import { RenderTags } from "../components/RenderTags";
 
 function Livro() {
   const navigate = useNavigate();
@@ -52,8 +53,8 @@ function Livro() {
 
     async function getAvalicao() {
       const params = {
-        usuario_id: usuario.id,
-        livro_id: livro.id
+        usuarioId: usuario.id,
+        livroId: livro.id
       }
       try {
         const a = await getAvaliacaoByUsuarioAndLivro(params);
@@ -89,32 +90,48 @@ function Livro() {
     <div className="home">
       <StdHeader usuario={usuario}/>
 
-      <div className="capa-e-titulo">
-        <img src={livro.capa || semCapaImagem} alt={livro.titulo} className="card-capa" />
-        <h1>{livro.titulo}</h1>
-      </div>
+      <PeachMain>
+      {/* Container pai pode ser flex se quiser lado a lado depois */}
+      <div className="md:items-start gap-4">
+        {/* Capa centralizada no mobile, alinhada à esquerda em telas maiores */}
+        <div className="w-full md:w-1/6 max-w-xs mx-auto md:mx-0">
+          <img
+            src={livro.capa || semCapaImagem}
+            alt={livro.titulo}
+            className="w-full h-auto object-contain rounded shadow"
+          />
+        </div>
 
-      <div>
-        <p style={{paddingLeft: "2%", fontSize: "24px"}}>Avalie este livro:</p>
-        <StarRating value={avaliacao.nota} onChange={handleAvaliacao} />
-      </div>
-        
-      <div className="livro-detalhes-wrapper">
-        <div className="livro-detalhes">
-            <div className="tag-list">
-            {livro.generos.map((g) => (
-                <a key={g.id} href={`/genero/${g.id}`} className="tag">
-                {g.nome}
-                </a>
-            ))}
-            </div>
-            <p className="detalhe-label">Autor(es): {livro.autores.map(a => a.nome).join(", ")}</p>
-            <p className="detalhe-label">Ano de publicação: {livro.ano}</p>
-            <p className="detalhe-label">Descrição: {livro.descricao}</p>
-
+        {/* Título alinhado à esquerda */}
+        <div className="my-4">
+          <h1 className="text-3xl font-extrabold text-left">Título: {livro.titulo}</h1>
         </div>
       </div>
-      
+
+
+        <div className="flex items-center gap-4">
+          <p className="text-2xl">Avalie este livro:</p>
+          <StarRating value={avaliacao.nota} onChange={handleAvaliacao} />
+        </div>
+
+        <br />
+          
+        <BookDetailsContainer>
+          <div className="livro-detalhes">
+              <div className="my-2">
+                <p className="mr-2 inline-flex">Gênero(s): </p>
+                <RenderTags list={livro.generos} baseUrl={"/genero/"} />
+              </div>
+              <div className="items-center">
+                <p className="mr-2 inline-flex">Autor(es): </p> 
+                <RenderTags list={livro.autores} baseUrl={"/autor/"} />
+              </div>
+              <p>Ano de publicação: {livro.ano || "N/A"}</p>
+              <p>Descrição: {livro.descricao || "N/A"}</p>
+
+          </div>
+        </BookDetailsContainer>
+      </PeachMain>
     </div>
   );
 }

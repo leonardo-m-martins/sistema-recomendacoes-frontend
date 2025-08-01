@@ -6,6 +6,8 @@ import Home from './pages/home';
 import Livro from './pages/livro';
 import Buscar from './pages/buscar';
 import Historico from './pages/historico';
+import Genero from './pages/genero';
+import Autor from './pages/autor';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/login" element={<Login />} />
       <Route path="/livro/:id" element={<Livro />} />
+      <Route path="/genero/:id" element={<Genero />} />
+      <Route path="/autor/:id" element={<Autor />} />
       <Route path="/buscar" element={<Buscar />} />
       <Route path="/usuario/historico/:id" element={<Historico />} />
     </Routes>

@@ -1,6 +1,6 @@
 import apiClient from "./apiClient";
 
-export const historico = async (usuario_id) => {
-    const response = await apiClient.get(`/usuario/${usuario_id}/historico`);
+export const getHistorico = async (usuario_id, params) => {
+    const response = await apiClient.get(`/usuario/${usuario_id}/historico`, {params});
     return response.data;
 }
