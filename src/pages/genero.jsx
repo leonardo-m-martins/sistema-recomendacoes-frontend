@@ -5,6 +5,7 @@ import { PeachMain } from '../components/PeachMain';
 import { RenderBooksGrid } from '../components/RenderBooksGrid';
 import { getGenero, getGeneroLivros } from '../api/apiGenero';
 import { VscLoading } from 'react-icons/vsc';
+import StdH2 from '../components/StdH2';
 
 function Genero() {
   const navigate = useNavigate();
@@ -58,11 +59,10 @@ function Genero() {
 
   return (
     <div>
-      <StdHeader usuario={usuario} />
 
-      <PeachMain>
+      <PeachMain usuario={usuario}>
         <section className="row">
-          <h3 className="text-2xl font-bold">Gênero: {genero.nome}</h3>
+          <StdH2>Gênero: {genero.nome}</StdH2>
           <RenderBooksGrid genericBookGetterFunction={getLivrosUsingGenero} />
         </section>
       </PeachMain>

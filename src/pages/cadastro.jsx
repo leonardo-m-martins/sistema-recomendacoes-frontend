@@ -47,18 +47,20 @@ function Cadastro() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!validate()) return;
 
-    cadastrar(formData); // Chamada API (pode ser await)
-    alert('Cadastro enviado!');
+    const response = await cadastrar(formData);
+    if (response == null) alert("Cadastro inválido.");
+    else {
+      alert('Cadastro feito com sucesso!');
 
-    setFormData({ nome: '', email: '', senha: '' });
-    setErrors({});
+      navigate('/login');
+    }
 
-    navigate('/login');
+    return;
   };
 
   return (
@@ -88,6 +90,7 @@ function Cadastro() {
             label="Senha"
             id="senha"
             name="senha"
+            type="password"
             value={formData.senha}
             onChange={handleChange}
             required

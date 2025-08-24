@@ -1,11 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { searchLivros } from '../api/livroApi';
-import StdHeader from '../components/StdHeader';
 import { PeachMain } from '../components/PeachMain';
-import BookGrid from '../components/BookGrid';
-import BookCard from '../components/BookCard';
 import { RenderBooksGrid } from '../components/RenderBooksGrid';
+import StdH2 from '../components/StdH2';
 
 function Buscar() {
   const navigate = useNavigate();
@@ -33,35 +31,6 @@ function Buscar() {
     return () => document.body.classList.remove("home");
   }, []);
 
-  useEffect(() => {
-    // Simulação de busca filtrando localmente
-    const params = {
-        q: termoBusca
-    }
-      
-    searchLivros(params).then(filtrados => {setResultados(filtrados)});
-    console.log(resultados);
-
-    setPageNumber(Math.ceil(resultados.length / 20));
-    setPaginaAtual(1);
-  }, [termoBusca]);
-
-  const handleAnterior = () => {
-    if (paginaAtual > 1) setPaginaAtual(paginaAtual - 1);
-  };
-
-  const handleProxima = () => {
-    if (paginaAtual < totalPaginas) setPaginaAtual(paginaAtual + 1);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const valor = parseInt(e.target.value);
-    if (!isNaN(valor) && valor >= 1 && valor <= totalPaginas) {
-      setPaginaAtual(valor);
-    }
-  };
-
   const getLivrosByQuery = useCallback(async (params) => {
     params["q"] = termoBusca;
     return await searchLivros(params);
@@ -69,14 +38,13 @@ function Buscar() {
 
   return (
     <div>
-      <StdHeader usuario={usuario}/>
-
-      <PeachMain>
-        <section className="row">
-          <h3>Resultados para "{termoBusca}"</h3>
+      <PeachMain usuario={usuario}>
+        { termoBusca && <section>
+          <StdH2>Resultados para "{termoBusca}"</StdH2>
 
           <RenderBooksGrid genericBookGetterFunction={getLivrosByQuery} />
         </section>
+        }
       </PeachMain>
     </div>
   );

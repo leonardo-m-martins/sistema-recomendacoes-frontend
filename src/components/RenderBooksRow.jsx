@@ -1,8 +1,30 @@
 import { FaRegCommentDots } from "react-icons/fa";
 import { BookRow } from "./BookRow";
 import BookCard from "./BookCard";
+import { useEffect, useState } from "react";
 
-export function RenderBooksRow({livros}) {
+export function RenderBooksRow({genericBookGetterFunction, params}) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [livros, setLivros] = useState(null);
+  
+  useEffect(() => {
+    async function useFunction(params) {
+      if (params != null) return await genericBookGetterFunction(params);
+      else return await genericBookGetterFunction();
+    }
+    useFunction(params).then((tempLivros) => {
+      setLivros(tempLivros);
+      setIsLoading(false);
+    });
+
+  }, []);
+
+    if (isLoading) {
+      return (
+        <BookRow />
+      );
+    }
+
     if (!livros || livros.length === 0) {
       return (
       <BookRow>

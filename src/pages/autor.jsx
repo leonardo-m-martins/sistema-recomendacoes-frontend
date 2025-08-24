@@ -5,6 +5,7 @@ import { PeachMain } from '../components/PeachMain';
 import { RenderBooksGrid } from '../components/RenderBooksGrid';
 import { VscLoading } from 'react-icons/vsc';
 import { getAutor, getLivrosByAutor } from '../api/apiAutor';
+import StdH2 from '../components/StdH2';
 
 function Autor() {
   const navigate = useNavigate();
@@ -58,11 +59,9 @@ function Autor() {
 
   return (
     <div>
-      <StdHeader usuario={usuario} />
-
-      <PeachMain>
+      <PeachMain usuario={usuario}>
         <section className="row">
-          <h3 className="text-2xl font-bold">Autor: {autor.nome}</h3>
+          <StdH2>Autor: {autor.nome}</StdH2>
           <RenderBooksGrid genericBookGetterFunction={getLivrosUsingAutor} />
         </section>
       </PeachMain>

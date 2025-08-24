@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/', // TODO: criar variável de ambiente.
+  baseURL: import.meta.env.VITE_API_URL,
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
@@ -26,6 +26,7 @@ apiClient.interceptors.response.use(
       // Token inválido ou expirado
       localStorage.removeItem('token');
       window.location.href = '/login'; // redireciona para login
+      alert("Sessão expirada.")
     }
     return Promise.reject(error);
   }

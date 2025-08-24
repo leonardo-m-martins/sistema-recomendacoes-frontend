@@ -83,15 +83,25 @@ function Login() {
         }
 
         // Faz o login
-        const dados = await login(dadosEnvio);
-        console.log("Usuário logado.");
+        const response = await login(dadosEnvio);
 
-        // Salva token e usuário no localStorage
-        localStorage.setItem('token', dados.token);
-        localStorage.setItem('usuario', JSON.stringify(dados.usuario));
+        if (response == null) {
+          alert("Nome ou senha incorretos.");
+          setFormData({
+            usuario: formData.usuario,
+            senha: '',
+          });
+        }
 
-        // Navega para dashboard
-        navigate('/');
+        else {
+          console.log("Usuário logado.");
+          localStorage.setItem('token', response.token);
+          localStorage.setItem('usuario', JSON.stringify(response.usuario));
+          navigate('/');
+        }
+
+        return;
+        
 
     } catch (erroBackend) {
         console.error('Erro: ', erroBackend);

@@ -3,7 +3,12 @@ import semCapaImagem from '../assets/sem-capa.jpg';
 
 const BookCard = ({livro}) => {
     return (
-        <Link to={`/livro/${livro.id}`} className="items-center hover:text-red-500" key={livro.id}>
+        <Link 
+            to={`/livro/${livro.id}`} 
+            className="items-center hover:text-red-500 max-w-40" 
+            key={livro.id} 
+            title={livro.titulo}
+        >
           <div className="pb-4 h-60 w-40">
               <img className="rounded-xl shadow-xl size-full bg-black/10" src={livro.capa || semCapaImagem} alt={livro.titulo} />
           </div>

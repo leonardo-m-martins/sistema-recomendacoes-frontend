@@ -24,3 +24,8 @@ export const getTopLivros = async (params) => {
     const response = await apiClient.get('/avaliacao/top-livros', { params });
     return response.data;
 }
+
+export const getTopLivrosRow = async (params) => {
+    const response = await apiClient.get('/avaliacao/top-livros', { params });
+    return response.data.content;
+}

@@ -4,6 +4,7 @@ import { getHistorico } from '../api/usuarioApi';
 import StdHeader from '../components/StdHeader';
 import { PeachMain } from '../components/PeachMain';
 import { RenderBooksGrid } from '../components/RenderBooksGrid';
+import StdH2 from '../components/StdH2';
 
 function Historico() {
   const navigate = useNavigate();
@@ -30,11 +31,9 @@ function Historico() {
 
   return (
     <div>
-      <StdHeader usuario={usuario} />
-
-      <PeachMain>
+      <PeachMain usuario={usuario}>
         <section className="row">
-          <h3>Histórico de leitura</h3>
+          <StdH2>Histórico de leitura</StdH2>
 
           {usuario && (
             <RenderBooksGrid genericBookGetterFunction={fetchHistoricoUsingUserConst} />
